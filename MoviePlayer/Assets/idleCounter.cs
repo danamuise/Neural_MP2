@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class idleCounter : MonoBehaviour {
-
+	/*
     public float idleTime;
     private float currTime;
     public Text textField;
@@ -49,5 +49,5 @@ public class idleCounter : MonoBehaviour {
         currTime = idleTime;
     }
 
-
+*/
 }

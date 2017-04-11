@@ -35,7 +35,7 @@ public class GoToGallery : MonoBehaviour {
 
 
         //deaScene.GetComponent<ShowAndHideManager>().ResetElapsed();
-        //GetComponent<AudioSource>().Play();
+
         deaScene.SetActive(false);
 
         actScene.SetActive(true);

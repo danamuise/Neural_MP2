@@ -69,10 +69,12 @@ public class CoverEvents : MonoBehaviour {
 
     public void gotoPlayVideoScene1()
     {
-        Invoke("disableBlack", 3.0F);
+        
         //fade out
         CameraFade.StartAlphaFade(Color.black, false, 2f, 0f, () => {
+			
             coverManager.goToVideoScene(1);
+			Invoke("disableBlack", 3.0F);
         });
         // Make your calls here
         
@@ -146,7 +148,7 @@ public class CoverEvents : MonoBehaviour {
     void disableBlack()
     {
 
-        black.SetActive(false);
+       // black.SetActive(false);
     }
 
 }
