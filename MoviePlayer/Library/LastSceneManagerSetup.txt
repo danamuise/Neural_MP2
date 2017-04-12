@@ -1,5 +1,4 @@
 sceneSetups:
-- path: Assets/Video Gallery and Video player for easyMovieTexture/Scenes/scene2D
-    6.unity
+- path: Assets/Video_5.unity
   isLoaded: 1
   isActive: 1

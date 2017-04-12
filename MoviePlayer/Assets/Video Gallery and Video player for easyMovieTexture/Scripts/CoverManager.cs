@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CoverManager : MonoBehaviour {
 
@@ -140,7 +141,10 @@ public class CoverManager : MonoBehaviour {
             {
                 Debug.Log("TIME UP");
                 ResetIdleTime();
-                goToVideoScene(movieNum +3);
+				CameraFade.StartAlphaFade (Color.black, false, 2f, 0f, () => {
+					SceneManager.LoadScene(5);
+				});
+                
                 
                 // timed = false;
                 /*
