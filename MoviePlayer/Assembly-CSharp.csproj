@@ -5,8 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{64774DB1-BC2B-CCD5-0E5A-BD355990E6B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -24,7 +23,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,7 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,122 +46,96 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\AutoRotate.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\ChangeVideoExample.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\DemoInfo.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\FrameExtract.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\Mapping3D.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\SampleApp_Multiple.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\ChangeAudioTrack.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\PlaybackSync.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\StartEndPoint.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\VideoTrigger.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\SimpleController.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\SphereDemo.cs" />
-    <Compile Include="Assets\AVProVideo\Demos\Scripts\VCR.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMaterial.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMesh.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\AudioOutput.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\CubemapCube.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayBackground.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayIMGUI.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayUGUI.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\MediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\SubtitlesUGUI.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\Support\ApplyToTextureWidgetNGUI.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\Support\WaitFinished.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Components\UpdateStereoMaterial.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\AndroidMediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\BaseMediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\Interfaces.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\NullMediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\OSXMediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\WebGLMediaPlayer.cs" />
-    <Compile Include="Assets\AVProVideo\Scripts\Internal\WindowsMediaPlayer.cs" />
-    <Compile Include="Assets\AlphaRaycaster\Scripts\AlphaCheck.cs" />
-    <Compile Include="Assets\AlphaRaycaster\Scripts\AlphaRaycaster.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.avcodec.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.avdevice.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.avfilter.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.avformat.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.avutil.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.swresample.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\FFmpeg.swscale.g.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\EasyMovieTexture\FFmpeg.AutoGen\Unresolved.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\MedaiPlayerSampleGUI.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\MedaiPlayerSampleSphereGUI.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\MediaPlayerCtrl.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\MediaPlayerEvent.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\MediaPlayerFullScreenCtrl.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\SeekBarCtrl.cs" />
-    <Compile Include="Assets\EasyMovieTexture\Scripts\SphereMirror.cs" />
-    <Compile Include="Assets\HideScreen.cs" />
-    <Compile Include="Assets\IdleTimer.cs" />
-    <Compile Include="Assets\LoadScene.cs" />
-    <Compile Include="Assets\PlaySnd.cs" />
-    <Compile Include="Assets\Simple Scene Fader\Scripts\Main\SSF_Add.cs" />
-    <Compile Include="Assets\Simple Scene Fader\Scripts\Main\SimpleSceneFader.cs" />
-    <Compile Include="Assets\Simple Scene Fader\Scripts\Others\MainCamScene1.cs" />
-    <Compile Include="Assets\Simple Scene Fader\Scripts\Others\MainCamScene2.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\CameraFade.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\CoverEvents.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\CoverManager.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\GoToGallery.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\PlayPauseManager.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\QuitApp.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\ShowAndHideManager.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\SliderFunctions.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\VolumeManager.cs" />
-    <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\cameraMovement2D.cs" />
-    <Compile Include="Assets\idleCounter.cs" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Lit-Diffuse.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Stereo.shader" />
-    <None Include="Assets\EasyMovieTexture\Unlit_SphereInside.shader" />
-    <None Include="Assets\AVProVideo\Demos\Materials\UI-Default-ExtraTexture.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-StereoUV.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit-Transparent.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo.cginc" />
-    <None Include="Assets\Video Gallery and Video player for easyMovieTexture\Textures\readme.txt" />
-    <None Include="Assets\EasyMovieTexture\Chromakey.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit-AndroidOES.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-IMGUI-Transparent.shader" />
-    <None Include="Assets\EasyMovieTexture\readme.txt" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreenTransparent.shader" />
-    <None Include="Assets\AVProVideo\Demos\Materials\UI-DefaultFont-ExtraTexture.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-AndroidOES.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere.shader" />
-    <None Include="Assets\EasyMovieTexture\Chromakey2.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreen.shader" />
-    <None Include="Assets\EasyMovieTexture\readme_License.txt" />
-    <None Include="Assets\AlphaRaycaster\readme.txt" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-Transparent.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Transparent.shader" />
-    <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit.shader" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PlaymodeTestsRunner">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HoloLens">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VR">
-      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\AutoRotate.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\ChangeVideoExample.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\DemoInfo.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\FrameExtract.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\Mapping3D.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\SampleApp_Multiple.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\ChangeAudioTrack.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\PlaybackSync.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\StartEndPoint.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\Scriptlets\VideoTrigger.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\SimpleController.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\SphereDemo.cs" />
+     <Compile Include="Assets\AVProVideo\Demos\Scripts\VCR.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMaterial.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMesh.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\AudioOutput.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\CubemapCube.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayBackground.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayIMGUI.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayUGUI.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\MediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\SubtitlesUGUI.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\Support\ApplyToTextureWidgetNGUI.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\Support\WaitFinished.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Components\UpdateStereoMaterial.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\AndroidMediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\BaseMediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\Interfaces.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\NullMediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\OSXMediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\WebGLMediaPlayer.cs" />
+     <Compile Include="Assets\AVProVideo\Scripts\Internal\WindowsMediaPlayer.cs" />
+     <Compile Include="Assets\AlphaRaycaster\Scripts\AlphaCheck.cs" />
+     <Compile Include="Assets\AlphaRaycaster\Scripts\AlphaRaycaster.cs" />
+     <Compile Include="Assets\Scripts\CameraFade.cs" />
+     <Compile Include="Assets\Scripts\HideScreen.cs" />
+     <Compile Include="Assets\Scripts\IdleTimer.cs" />
+     <Compile Include="Assets\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\PlaySnd.cs" />
+     <Compile Include="Assets\Scripts\idleCounter.cs" />
+     <Compile Include="Assets\Scripts\timer.cs" />
+     <Compile Include="Assets\Simple Scene Fader\Scripts\Main\SSF_Add.cs" />
+     <Compile Include="Assets\Simple Scene Fader\Scripts\Main\SimpleSceneFader.cs" />
+     <Compile Include="Assets\Simple Scene Fader\Scripts\Others\MainCamScene1.cs" />
+     <Compile Include="Assets\Simple Scene Fader\Scripts\Others\MainCamScene2.cs" />
+     <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\CameraFade.cs" />
+     <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\QuitApp.cs" />
+     <Compile Include="Assets\Video Gallery and Video player for easyMovieTexture\Scripts\ShowAndHideManager.cs" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Lit-Diffuse.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Stereo.shader" />
+     <None Include="Assets\AVProVideo\Demos\Materials\UI-Default-ExtraTexture.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-StereoUV.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit-Transparent.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo.cginc" />
+     <None Include="Assets\Video Gallery and Video player for easyMovieTexture\Textures\readme.txt" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit-AndroidOES.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-IMGUI-Transparent.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreenTransparent.shader" />
+     <None Include="Assets\AVProVideo\Demos\Materials\UI-DefaultFont-ExtraTexture.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-AndroidOES.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Background-FullScreen.shader" />
+     <None Include="Assets\AlphaRaycaster\readme.txt" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-VR-InsideSphere-Transparent.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-UI-Default-Transparent.shader" />
+     <None Include="Assets\AVProVideo\Resources\Shaders\AVProVideo-Unlit.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -174,4 +145,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
